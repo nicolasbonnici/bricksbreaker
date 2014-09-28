@@ -1,0 +1,11 @@
+{
+    "package": "sample",
+    "version": "1.0",
+    "release": "sample-release",
+    "author": "Nicolas BONNICI",
+    "vendor": "nicolasbonnici",
+    "repository": "https://github.com/nicolasbonnici/sample",
+    "require": {
+        "error"
+    }
+}
