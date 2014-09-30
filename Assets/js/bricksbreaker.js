@@ -22,13 +22,13 @@ $(document).ready( function() {
         NROWS : 5,
         NCOLS : 5,
         BRICKWIDTH: 0,
-        BRICKHEIGHT : 15,
+        BRICKHEIGHT : 30,
         PADDING : 1,
         ballr : 10,
-        rowcolors : ["#FF1C0A", "#FFFD0A", "#00A308", "#0008DB", "#EB0093"],
-        paddlecolor : "#FFFFFF",
+        rowcolors : ["#5bc0de"],
+        paddlecolor : "#5bc0de",
         ballcolor : "#FFFFFF",
-        backcolor : "#000000",
+        backcolor : "transparent",
         
         init: function() {
             game.ctx = $('#screen')[0].getContext("2d");

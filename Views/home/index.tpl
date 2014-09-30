@@ -70,8 +70,8 @@
                 </li>
             </ul>
         </div>
-        <div class="col-md-12 column">
-            <canvas id="screen" height="600" width="800"></canvas>
+        <div class="col-md-12 column text-center">
+            <canvas id="screen" width="600" height="480"></canvas>
         </div>
     </div>
 </div>

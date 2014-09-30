@@ -1,11 +1,11 @@
 {
-    "package": "sample",
+    "package": "brickbreaker",
     "version": "1.0",
-    "release": "sample-release",
+    "release": "stable",
     "author": "Nicolas BONNICI",
     "vendor": "nicolasbonnici",
-    "repository": "https://github.com/nicolasbonnici/sample",
-    "require": {
+    "repository": "https://github.com/nicolasbonnici/bricksbreaker",
+    "require": [
         "error"
-    }
+    ]
 }
