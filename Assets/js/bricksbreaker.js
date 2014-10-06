@@ -2,6 +2,7 @@ $(document).ready( function() {
 
     var game = {
 
+        points: 0,
         speed: 10,
         x : 25,
         y : 250,
@@ -124,6 +125,8 @@ $(document).ready( function() {
         if (game.y < game.NROWS * rowheight && row >= 0 && col >= 0 && game.bricks[row][col] == 1) {
             game.dy = -game.dy;
             game.bricks[row][col] = 0;
+            game.points += 10;
+            refreshPointsCounter();
         }
 
         if (game.x + game.dx + game.ballr > game.WIDTH || game.x + game.dx - game.ballr < 0)
@@ -144,9 +147,21 @@ $(document).ready( function() {
         game.y += game.dy;  
     }
     
+    function refreshPointsCounter() {
+        $('#points-counter').empty().append(game.points + ' Points!');
+    }
+    
     $(document).keydown(game.onKeyDown);
     $(document).keyup(game.onKeyUp);
     $(document).mousemove(game.onMouseMove);
+    
+    $('body').on('click', 'a.game-reset', function() {
+       game.init();
+       initBricks();
+       game.x = 25;
+       game.y = 250;
+       return false;
+    });
 
     game.init();
     initBricks();

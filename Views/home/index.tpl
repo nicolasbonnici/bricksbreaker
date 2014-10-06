@@ -72,6 +72,11 @@
         </div>
         <div class="col-md-12 column text-center">
             <canvas id="screen" width="600" height="480"></canvas>
+            <div  class="pull-right col-md-2 margin padding transparentBlackBg blackTextShadow ui-shadow">
+                <a href="#" class="game-reset btn btn-primary">Reset!</a>
+                <h3>Score</h3>
+                <div id="points-counter"></div>
+            </div>
         </div>
     </div>
 </div>
